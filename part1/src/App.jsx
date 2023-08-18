@@ -1,7 +1,8 @@
-const Hello = () => {
+const Hello = (props) => {
+  
   return (
     <div>
-      <p>Hello World</p>
+      <p>Hello {props.name}</p>
     </div>
     );
 }
@@ -9,9 +10,10 @@ const Hello = () => {
 const App = () => {
   return ( 
     <div>
-      <Hello/>
-      <Hello/>
-      <Hello/>
+      <h1>Greatings </h1>
+      <Hello name="Bamba"/>
+      <Hello name="Kofi"/>
+      
     </div>
    );
 }
