@@ -1,26 +1,15 @@
-import { Button } from 'react-bootstrap';
+import Form1 from './component/form';
+
+import Button1 from './component/button';
 
 
-
-const Hello = (props) => {
-  console.log(props)
-  
-  return (
-    <div>
-      <p>Hello {props.name} , you are {props.age} years old</p>
-    </div>
-    );
-}
- 
 const App = () => {
-  const name = "Peter"
-  const age = 10
+  
   return ( 
     <div>
-      <h1>Greatings </h1>
-      <Hello name="maya" age ={26-10}/>
-      <Hello name={name} age={age}/>
-      
+      <h1>Hello</h1>
+     <Button1/>
+     <Form1/>
     </div>
    );
 }
